@@ -55,7 +55,8 @@ def generate_launch_description():
     gazebo_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(
-                get_package_share_directory('turtlebot3_gazebo'),
+                # get_package_share_directory('turtlebot3_gazebo'),
+                get_package_share_directory('robot_move'),
                 'launch',
                 'turtlebot3_world.launch.py'
             )
