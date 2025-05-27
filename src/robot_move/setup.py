@@ -13,6 +13,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob.glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'map'), glob.glob('map/*')),
+        (os.path.join('share', package_name, 'map'), glob.glob('worlds/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
